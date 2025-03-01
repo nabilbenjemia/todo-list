@@ -2,10 +2,33 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './Header'
+import MainContent from './MainContent'
+import Footer from './Footer'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { createRoot } from 'react-dom/client'
+import { createElement } from 'react'
+import { Fragment } from 'react'
 
+const root = createRoot(document.getElementById("root"))
+
+
+export default function App() {
+  return (
+    <>
+    <Header />
+    <MainContent />
+    <Footer />
+
+    </>
+  
+)
+}
+
+root.render(
+  <App />
+)
+/*
   return (
     <>
       <div>
@@ -29,6 +52,5 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
-}
-export default App
+  )*/
+
