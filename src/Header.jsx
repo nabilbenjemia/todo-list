@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <header className="header">
-            <img src="\src\assets\react.svg"  alt="React logo" />
+            <img src="\src\assets\react.svg" className="nav-logo" alt="React logo" />
             <nav>
                 <ul className="nav-list">
                     <li className="nav-list-item">Pricing</li>

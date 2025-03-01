@@ -1,4 +1,4 @@
-:root {
+/*:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,24 +11,20 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+}*/
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+
+
+* {
+  box-sizing: border-box;
+  
 }
 
 body {
-  font-family: 'Inter', sans-serif;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  background-color: #21222A;
+  color: white;
 }
 
 h1 {
@@ -36,55 +32,61 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 
 
 .header {
-  display: flex;
+  display:block;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav-list {
-  list-style: none;
+header {
+  width: 100%; /* Ensures it spans the full width */
+  height: 90px;
+  background-color: #21222A;
+  padding: 30px 25px;
+  margin: 0; /* Removes any default margin */
+}
+
+
+nav {
   display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-.nav-list-item {
-  margin-left: 10px;
-  font-size: 1.1rem;
+nav > img {
+  width: 40px;
+  margin-right: 7px;
 }
 
-.nav-logo {
-  width: 55px;
+nav > span {
+  color: #61DAFB;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.list-main {
+  margin-top: 46px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.list-main li{
+  padding-block: 10px; /*adds padding up and down? see margin-block too*/
+  line-height: 19px;
+}
+
+.list-main li::marker{ /* ::marker to modify the bullets*/
+  color: #61DAFB;
+  font-size: 1.6rem;
+}
+
+main{
+  padding: 60px 30px;
+  background-image: url(/home/nabil/personalProjects/todo-list/src/assets/react.svg); /*add background image*/
+  background-repeat:no-repeat;
+  background-position-x: right;
+  background-position-y: 70%;
 }
