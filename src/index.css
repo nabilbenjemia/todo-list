@@ -26,7 +26,7 @@ h1 {
 
 
 .header {
-  display:block;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -37,6 +37,13 @@ header {
   background-color: #080808;
   padding: 30px 25px;
   margin: 0; /* Removes any default margin */
+}
+
+.journal-header {
+  display: flex;
+  align-items: center; /*align vertically*/
+  justify-content: center; /*align horizontally*/
+  background-color: #F55A5A;
 }
 
 
@@ -81,3 +88,80 @@ main{
   background-position-x: right;
   background-position-y: 70%;
 }
+
+.journal-span {
+  padding-left: 10px; /*move it a bit to the right*/
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17.5px;
+  letter-spacing: -7.5%;
+
+}
+
+.entry-layout {
+  display: flex;
+  padding: 60px 100px;
+  flex-shrink: 0;
+}
+
+.country-img {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.country-info {
+  margin: 5px 20px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location-name {
+  width: 326px;
+  height: 30px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 25;
+  line-height: 30.26px;
+  letter-spacing: 0;
+}
+
+.maps-link {
+  margin-left: 20px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 10.24;
+  line-height: 12.39px;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+  color:#918E9B;
+}
+
+.date {
+  width: 319px;
+  height: 11px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 10.24;
+  line-height: 12.39px;
+  letter-spacing: 0;
+}
+
+.description {
+  max-width: 650px; /* px hereee*/
+  height: 100px; /* px hereee*/
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 10.24; /*NO px hereee*/
+  line-height: 20px;
+  letter-spacing: 0;
+
+}
+

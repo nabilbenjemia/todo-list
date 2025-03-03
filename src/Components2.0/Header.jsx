@@ -1,8 +1,8 @@
 export default function Header() {
     return (
-        <header>
-        <img src="globe.png" width="60px" alt="globe" />
-        <span>my travel journal</span>
+        <header className="journal-header">
+        <img src="globe.png" width="24px" alt="globe" />
+        <span className="journal-span">my travel journal</span>
         </header>
     )
 }

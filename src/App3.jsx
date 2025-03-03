@@ -1,13 +1,15 @@
 import { createRoot } from "react-dom/client";
 import Header from "./Components2.0/Header";
-import App2 from "./App2";
-
-const root = createRoot(document.getElementById("root"))
+import Entry from "./Components2.0/Entry"
+//const root = createRoot(document.getElementById("root"))
 
 export default function App3() {
     return (
+        <>
         <Header />
+        <Entry />
+        </>
     )
 }
 
-root.render(<App2 />)
+//root.render(<App3 />)
